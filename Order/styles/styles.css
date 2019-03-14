@@ -1,0 +1,262 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+    display: flex;
+}
+a{
+    text-decoration: none;
+}
+header{
+    background: #f6f6f6;
+    padding: 22px 0;
+}
+
+.header-container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-container a{
+    color: #000;
+    font-size: 16px;
+    margin-right: 64px;
+    padding: 27px 6px;
+}
+
+.header-container a:hover{
+    background: #ffea00;
+}
+#menu-checkbox{
+    display: none;
+}
+ul{
+    display: flex;
+}
+nav{
+    margin-top: 20px;
+}
+
+.top-slide{
+    background: url(../img/slider-bg.jpg) no-repeat;
+    padding-top: 120px;
+    padding-bottom: 280px;
+}
+.top-container{
+    width: 85%;
+    margin: 0 auto;
+}
+.top-slide h2{
+    background: #ffea00;
+    display: inline;
+    font-size: 70px;
+    padding: 0 13px;
+}
+.top-slide :nth-child(2){
+    margin-bottom: 10px;
+}
+.top-slide p{
+    background: #414146;
+    display: inline;
+    font-size: 24px;
+    color: #f6f6f6
+}
+
+.specialize-container{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.specialize-container h3{
+    font-size: 35px;
+}
+.specialize-container p{
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.specialize-cards{
+    display: flex;
+    justify-content: space-between;
+}
+.first-p{
+    font-size: 20px;
+    color: #fff;
+}
+.top-card{
+    background: url(../img/bg-card.png);
+}
+.bottom-card{
+    background: #414146;
+    position: relative;
+    top: -20px;
+}
+.portfolio{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+.portfolio h4{
+    background: #424147;
+    padding: 0 8px;
+    font-size: 18px;
+    margin-bottom: 30px;;
+    display: inline-block;
+    color: #f5e10a;
+}
+.portfolio p{
+    color: #424146;
+    font-size: 16px;
+}
+.brand-slider{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+.brand-slider h4{
+    margin-top: 40px;
+    background: #424147;
+    padding: 0 8px;
+    font-size: 18px;
+    margin-bottom: 30px;;
+    display: inline-block;
+    color: #f5e10a;
+}
+.brand-slider p{
+    color: #424146;
+    font-size: 16px;
+}
+.toggles button{
+    border: none;
+    color: #424146;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 20px 5px;
+}
+.toggles button:after{
+    content: ' / '
+}
+.toggles button:last-child:after{
+    content: "";
+}
+.posts{
+    width: 90%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 0 auto;
+}
+.posts img{
+    height: 230px;
+    width: 230px;
+    padding-top: 20px;
+}
+footer{
+    background: #414146;
+    padding: 30px 0;
+    color: #f6f6f6;
+}
+footer h4{
+    font-size: 18px;
+}
+.footer-container{
+    widows: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 40% 30% 15%;
+    grid-column-gap: 3%;
+}
+.footer-container .about-us a{
+    background: #000;
+    border-bottom: 2px solid #f5e10a;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    color: #f6f6f6;
+    font-size: 15px;
+    padding: 15px;
+    display: inline-block;
+}
+.footer-container .about-us p{
+    margin-top: 20px;
+}
+.images{
+    margin-top: 10px;
+}
+.tweets p{
+    margin-top: 20px;
+}
+@media screen and (max-width: 420px) {
+    .header-container{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .main-menu{
+        display: none;
+    }
+    .main-menu li{
+        display: block;
+        width: 100%;
+        font-size: 12px;
+    }
+    .main-menu a{
+        display: block;
+        padding: 8px;
+    }
+    .toggle-button{
+        text-align: center;
+        display: block;
+        cursor: pointer;
+        color: #000;
+        margin-top: 20px;
+    }
+    .toggle-button:after{
+        content: attr(data-open);
+        display: block;
+    }
+    #menu-checkbox:checked + nav[role="navigation"] .main-menu{
+        display: block;
+    }
+    #menu-checkbox:checked + nav[role="navigation"] .toggle-button:after{
+        content: attr(data-close);
+    }
+    .header-container a{
+        margin-right: -65px;
+    }
+    .main-menu{
+        position: relative;
+        top: 30px;
+        right: 115px;
+    }
+    .top-slide{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .top-slide h2{
+        font-size: 32px;
+    }
+    .top-slide p{
+        font-size: 16px;
+    }
+    .specialize-container p{
+        font-size: 16px;
+    }
+    .specialize-cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .bottom-card{
+        width: 250px;
+        margin: 0 auto;
+    }
+    .posts{
+        grid-template-columns: auto;
+    }
+}

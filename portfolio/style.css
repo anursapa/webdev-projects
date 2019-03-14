@@ -1,0 +1,66 @@
+/* .navbar-custom {
+    background-color: #06162d;
+    color: white;
+} */
+body {}
+
+.div-custom {
+  padding-top: 15em;
+}
+
+#skills {
+  margin-top: 14em;
+  padding-top: 5em;
+}
+
+#contacts {
+
+  padding-top: 5em;
+}
+
+#education {
+
+  padding-top: 5em;
+}
+
+#projects {
+
+  padding-top: 5em;
+}
+
+.lhcustom {
+  background-color: #06162d;
+}
+
+.list-group {
+  margin-top: 2em;
+}
+
+#edudiv{
+    margin-top: 3em;
+}
+#projectslider{
+width: 65%;
+}
+.more{
+  margin-top: 3em;
+  font-size: 20px;
+}
+.ul-custom{
+  margin-top: 0;
+}
+.insitution{
+  font-weight: bold;
+  margin-top: -15px;
+
+}
+#lasth2{
+  margin-bottom: 4em;
+}
+
+.socnet{
+  margin-bottom: 13em;
+}
+.sn:hover{
+  transform: scale(1.2);
+}

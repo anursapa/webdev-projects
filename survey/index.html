@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Survey</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <!-- <script src="main.js"></script> -->
+    <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main">
+        <div class="title">
+            <h1 id="title">Survey form</h1>
+            <p id="description">
+                Please fill in the form for the online shopping website
+            </p>
+        </div>
+        <div class="form">
+            <form id="survey-form" action="">
+                <div class="container">
+                    <div class="left-row">
+                        <label for="name" id="name-label">Name*:</label>
+                    </div>
+                    <div class="right-row">
+                        <input type="text" name="name" id="name" class="input-field" placeholder="Enter your name"
+                            required autofocus>
+                    </div>
+                </div>
+                <hr>
+                <div class="container">
+                    <div class="left-row">
+                        <label for="email" id="email-label">Email*:</label>
+                    </div>
+                    <div class="right-row">
+                        <input type="email" name="email" id="email" class="input-field" placeholder="Enter email"
+                            required>
+                    </div>
+                </div>
+                <hr>
+                <div class="container">
+                    <div class="left-row">
+                        <label for="age" id="number-label">Your age:</label>
+                    </div>
+                    <div class="right-row">
+                        <input type="number" min="1" max="125" class="input-field" name="age" id="number" placeholder="Your age">
+                    </div>
+                </div>
+                <hr>
+                <div class="container">
+                    <div class="left-row">
+                        <label for="occupation" id="occupation-label">What is your occupation</label>
+                    </div>
+                    <div class="right-row">
+                        <select id="dropdown" name="occupation">
+                            <option value="student">Student</option>
+                            <option value="employed">Employed</option>
+                            <option value="unemployed">Unemployed</option>
+                        </select>
+                    </div>
+                </div>
+                <hr>
+                <div class="container">
+                    <div class="left-row">
+                        <label for="favs" id="favs-label">What are you interested in buying</label>
+                    </div>
+                    <div class="right-row">
+                        <input type="checkbox" name="favs" value="electronics">Electronics
+                        <input type="checkbox" name="favs" value="clothes">Clothes
+                        <input type="checkbox" name="favs" value="cosmetics">Cosmetics
+                    </div>
+                </div>
+                <hr>
+                <div class="container">
+                    <div class="left-row">
+                        <label for="rating">Rate us</label>
+                    </div>
+                    <div class="rigth-row">
+                        <input type="radio" name="rating" value="3">3
+                        <input type="radio" name="rating" value="2">2
+                        <input type="radio" name="rating" value="1">1
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="left-row">
+                        <label for="opinion" id="opinion-label">Please leave your opinion on our shop</label></div>
+                    <div class="right-row"><textarea name="comment" id="comment" cols="30" rows="7" placeholder="Write your opinion here"></textarea>
+                    </div>
+                </div>
+                <button id="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
