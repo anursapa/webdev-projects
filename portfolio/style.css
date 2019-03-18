@@ -9,18 +9,18 @@ body {}
 }
 
 #skills {
-  margin-top: 14em;
+  margin-top: 8em;
   padding-top: 5em;
 }
 
 #contacts {
-
-  padding-top: 5em;
+  padding-top: 3em;
 }
 
 #education {
 
   padding-top: 5em;
+  margin-top: 5em;
 }
 
 #projects {
@@ -63,4 +63,7 @@ width: 65%;
 }
 .sn:hover{
   transform: scale(1.2);
+}
+.snp{
+  font-weight: bold;
 }
